@@ -17,7 +17,6 @@ or using the parameterized class with more options:
 
 <pre>
 	class {'rrdcached':
-		listen           => 'unix:/var/run/rrdcached.sock',
 		gid              => 'nagios',
 		journal_dir      => '/var/lib/rrdcached/journal/',
 		mode             => '0660',
@@ -25,9 +24,7 @@ or using the parameterized class with more options:
 		delay            => '1800',
 		write_threads    => '4',
 		jump_dir         => '/var/lib/rrdcached/db/',
-		always_flush     => true,
-		enable_corefiles => false,
-		maxwait          => '30'
+		always_flush     => true
 	}
 </pre>
 
@@ -36,8 +33,8 @@ For all options see manifests/init.pp
 Development
 -----------
 
-* project url: [https://github.com/booo/puppet-rrdcached](https://github.com/booo/puppet-rrdcached)
-* issues: [https://github.com/booo/puppet-rrdcached/issues](https://github.com/booo/puppet-rrdcached/issues)
+* project url: [https://github.com/freifunk-berlin/puppet-rrdcached](https://github.com/freifunk-berlin/puppet-rrdcached)
+* issues: [https://github.com/freifunk-berlin/puppet-rrdcached/issues](https://github.com/freifunk-berlin/puppet-rrdcached/issues)
 
 Copyright and License
 ---------------------
