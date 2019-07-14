@@ -6,4 +6,5 @@
   "license": "GPL",
   "summary": "puppet module for rrdcached",
   "project_page": "https://github.com/freifunk-berlin/puppet-rrdcached"
+  "dependencies": [] 
 }
