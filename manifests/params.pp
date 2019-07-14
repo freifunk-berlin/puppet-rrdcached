@@ -4,7 +4,6 @@ class rrdcached::params {
   $service_ensure = 'running'
   $service_enable = true
 
-  $listen  = 'unix:/var/run/rrdcached.sock'
   $gid     = 'root'
   $journal_dir = '/var/lib/rrdcached/journal/'
   $mode    = '0660'
@@ -13,8 +12,6 @@ class rrdcached::params {
   $write_threads = '4'
   $jump_dir = '/var/lib/rrdcached/db/'
   $always_flush = true
-  $enable_corefiles = false
-  $maxwait = '30'
   $restrict_writes = false
 
   case $::operatingsystem {
